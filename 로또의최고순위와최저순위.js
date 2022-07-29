@@ -28,3 +28,6 @@ function solution(lottos, win_nums) {
 
   return answer;
 }
+
+// 첫 트 ( 100.0 / 100.0 )
+// 이긴 한데... 3주 쉬니까 감이 너무 떨어졌다..ㅋㅋ 이렇게 길게 쓸 문제가 아닌데 ㅠ

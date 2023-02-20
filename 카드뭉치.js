@@ -11,6 +11,10 @@ function solution(cards1, cards2, goal) {
   }
   if (str1 !== [...str1].sort().join("")) return "No";
   else if (str2 !== [...str2].sort().join("")) return "No";
+  // 인덱스가 "123...91011"과 같이 문자열로 나열되어있는 str1과 str2에 sort 사용 시,
+  // 10의 자리 이상부터는 제대로 정렬이 되지 않을 뿐더러, 스프레드 연산자를 사용하면 10의 자리 구분없이 전부 1의 자리로 나뉘어진다.
+  // 만약 sort를 사용할 거라면 처음부터 문자열이 아닌 배열로 각 인덱스를 담아 10의 자리를 보존시키고, sort((a, b) => a - b)와 같이 오름차순으로 정렬해줘야함.
+  // 해줬는데도.. 오답이네...
   else return "Yes";
 }
 
